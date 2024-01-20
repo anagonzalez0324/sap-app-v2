@@ -7,25 +7,25 @@ JOBS = [
     'id': 1,
     'title': 'Buffalo Boys',
     'imprint_location': 'Left Chest',
-    'price': '$100.00'
+    'price': '$798.00'
   },
   {
     'id': 1,
     'title': 'Reliant Logo',
     'imprint_location': 'Left Chest',
-    'price': '$100.00'
+    'price': '$85.00'
   },
   {
     'id': 1,
     'title': 'T Parker Hats',
     'imprint_location': 'Left Chest',
-    'price': '$100.00'
+    'price': '$130.00'
   },
   {
     'id': 1,
     'title': 'Big D Welding',
     'imprint_location': 'Left Chest',
-    'price': '$100.00'
+    'price': '$350.00'
   }
 ]
 

@@ -1,10 +1,11 @@
+from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
-import json
+import os
 
-with open('config.json', 'r') as config_file:
-    config = json.load(config_file)
+# Load environment variables from .env file
+load_dotenv()
 
-db_connection_string = config['db_connection_string']
+db_connection_string = os.environ.get('DB_CONNECTION_STRING')
 
 engine = create_engine(
     db_connection_string,

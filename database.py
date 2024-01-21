@@ -5,10 +5,10 @@ import os
 # Load environment variables from .env file
 load_dotenv()
 
-db_connection_string = os.environ.get('DB_CONNECTION_STRING')
+DB_CONNECTION_STRING = os.environ.get('DB_CONNECTION_STRING')
 
 engine = create_engine(
-    db_connection_string,
+    DB_CONNECTION_STRING,
     connect_args = {
         "ssl": {
             "ca": "/etc/ssl/cert.pem",

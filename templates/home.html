@@ -62,6 +62,9 @@
             <div class="icon-box">
               <a href="jobs"><i class="fas fa-file fa-3x"></i></a>
               <p>Jobs</p>
+              {% for job in jobs %}
+                <div>{{job['title']}}</div>
+              {% endfor %}
             </div>
           </div>
       

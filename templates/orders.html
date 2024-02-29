@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% include 'bootstrap.html' %}
+</head>
+<body>
+    {% include 'nav.html' %}
+
+    <div class="container">
+        <div class="mt-4">
+            <a href="/new-order" type="button" class="btn btn-outline-primary">Create New Order</a>
+        </div>
+        <div class="mt-4">
+            {% for order in orders %}
+                {% include 'orderitem.html' %}
+            {% endfor %}
+
+            <p>test</p>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

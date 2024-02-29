@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAP Orders</title>
+    {% include 'bootstrap.html' %}
+</head>
+<body>
+    {% include 'nav.html' %}
+    <div class="container">
+        <h3 class="mt-4">{{order.title}}</h3>
+        <h5>Details</h5>
+        <p>{{order.details}}</p>
+        <h5>Total</h5>
+        <p>${{order.price}} </p>
+    </div>
+</body>
+</html>

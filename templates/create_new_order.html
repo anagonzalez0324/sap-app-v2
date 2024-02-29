@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form</title>
+  {% include 'bootstrap.html' %}
+</head>
+<body>
+    {% include 'nav.html' %}
+
+<div class="container mt-4">
+    <a href="/orders" class="text-decoration-none">Back to Orders</a>
+  <h2 class="mb-4">Order Form</h2>
+  <form action="/submit-order" method="get">
+    <!-- Customer Information -->
+    <div class="form-group mb-4">
+      <label for="customerName">Customer Name</label>
+      <input type="text" class="form-control" id="customerName" placeholder="ABC Company" required>
+    </div>
+
+    <div class="form-group mb-4">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" placeholder="example@domain.com" required>
+    </div>
+
+    <!-- Order Details -->
+    <div class="form-group mb-4">
+      <label for="productType">Product Type</label>
+      <select class="form-control" id="productType" required>
+        <option value="screenPrint">Screen Print</option>
+        <option value="embroidery">Embroidery</option>
+      </select>
+    </div>
+
+    <div class="form-group mb-4">
+      <label for="quantity">Quantity</label>
+      <input type="number" class="form-control" id="quantity" placeholder="Enter quantity" required>
+    </div>
+
+    <!-- Customization Options -->
+    <div class="form-group mb-4">
+      <label for="designDetails">Design Details</label>
+      <textarea class="form-control" id="designDetails" rows="3" placeholder="Enter design details"></textarea>
+    </div>
+
+    <div class="form-group mb-4">
+      <label for="colorPreferences">Color Preferences</label>
+      <input type="text" class="form-control" id="colorPreferences" placeholder="Enter color preferences">
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary">Submit Order</button>
+  </form>
+</div>
+
+{% include 'footer.html' %}
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
